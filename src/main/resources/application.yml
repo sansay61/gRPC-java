@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: "off"
+
+rest:
+  vostro:
+    port: 8080
+    ip: 192.168.31.30
+grpc:
+  port: 8081
+  vostro:
+    ip: 192.168.31.30
+    port: 8081
+  mac:
+    ip: 192.168.31.31
+    port: 8081

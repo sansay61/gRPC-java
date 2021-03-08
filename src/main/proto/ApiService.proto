@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package kg.nurtelecom.grpc;
+
+message ApiServiceRequest {
+   repeated string text = 1;
+}
+
+message ApiServiceResponse {
+    repeated string answer = 2;
+}
+
+service ApiService {
+    rpc getResponse(ApiServiceRequest) returns (ApiServiceResponse);
+}
